@@ -1,0 +1,40 @@
+// 针对特定ui设计稿 重置样式文件
+
+@import "./variable";
+
+body, html {
+    font: 12px/1.5 \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", "Droid Sans Fallback", SimSun, sans-serif;
+    line-height: 1.5;
+    font-size: $fz-sm;
+    color: $cl-txt;
+}
+
+// 解决左右出现滚动条时 左右晃动问题
+html {
+    overflow-y: scroll;
+}
+:root {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+:root body {
+    position: absolute;
+}
+body {
+    width: 100vw;
+    overflow: hidden;
+}
+
+// placeholder 样式
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #b8d7ff!important
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #b8d7ff!important
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #b8d7ff!important
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #b8d7ff!important
+}
